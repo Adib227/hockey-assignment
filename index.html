@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
 
   <style>
     .font-manrope {
@@ -19,22 +22,63 @@
     }
   </style>
 </head>
+<!-- navbar section -->
 
 <body class="font-manrope">
   <header>
-    <div class="carousel items-center ">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a><span style="color: #FF4240;">Home</span></a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li>
+              <a>Blog</a>
+            </li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span style="color: #FF4240;">'</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a><span style="color: #FF4240;">Home</span></a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li>
+            <details>
+              <summary>Blog</summary>
+            </details>
+          </li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end gap-4">
+        <p><i class="fa-solid fa-magnifying-glass text-xl"></i></p>
+        <a class="btn btn-error text-white">Get Ticket</a>
+      </div>
+    </div>
+    <!-- Banner section -->
+    <div class="carousel items-center content-center ">
       <div id="slide1" class="carousel-item relative w-full ">
-        <img src="Images/1.png" class=" h-1/2 center" />
+        <img src="./Images/1.png" class="ml-0 lg:ml-96 center" />
         <div class="absolute flex transform -translate-y-1/2 left-5 right-5 top-1/2 justify-between ">
-          <a href="#slide1" class="btn btn-circle bg-black text-white border-0 text-2xl">❮</a>
-          <a href="#slide2" class="btn btn-circle bg-black text-white border-0 text-2xl">❯</a>
-          <div class="bg-black w-1/2 p-5 rounded-xl align-bottom">
+          <a href="#slide1" class="btn btn-circle  bg-black text-white border-0 text-xl ml-0 lg:ml-96">❮</a>
+          <a href="#slide2" class="btn btn-circle bg-black text-white border-0 text-xl">❯</a>
+          <!-- <div class="bg-black w-1/2 p-5 rounded-xl align-bottom">
             <h3 class="font-bold text-2xl text-white">Meet all the heroes from the field</h3>
             <br>
             <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
               Purus urna in sit
               nullam proin.</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -46,46 +90,172 @@
         <h1 class="text-black text-4xl font-extrabold">Professional Hockeys Club</h1>
         <p class="text-lg font-medium mt-6">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
           placerat
+          <br>
           dolor.
           Purus urna in sit
-          nullam proin.</p>
+          nullam proin.
+        </p>
       </div>
       <hr class="mb-14 mx-52 border-dashed border-[rgba(19, 19, 24, 0.2)] ">
 
-      <div class="flex sm:grid-cols-1 lg:grid-cols-4 justify-between px-52">
+      <div class="grid lg:flex justify-between px-0 lg:px-52">
         <div>
-          <div class="radial-progress text-xl text-red-500 font-extrabold items-center" style="--value:87;"
-            role="progressbar"><span style="color: black;">87%</span>
+          <div class="radial-progress text-xl text-red-500 font-extrabold ml-5" style="--value:87;" role="progressbar">
+            <span style="color: black;">87%</span>
           </div>
           <h3 class="text-xl font-semibold mt-6 ">Prayer Facility</h3>
           <p class="mt-5 w-80 text-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div>
-          <div class="radial-progress text-xl text-green-400  font-extrabold" style="--value:95;" role="progressbar">
+          <div class="radial-progress text-xl text-green-400  font-extrabold ml-10" style="--value:95;"
+            role="progressbar">
             <span style="color: black;">95%</span>
           </div>
           <h3 class="text-xl font-semibold mt-6 ">Experienced Coach</h3>
           <p class="mt-5 w-80 text-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div>
-          <div class="radial-progress text-xl text-yellow-400 font-extrabold" style="--value:90;" role="progressbar">
+          <div class="radial-progress text-xl text-yellow-400 font-extrabold ml-5" style="--value:90;"
+            role="progressbar">
             <span style="color: black;">90%</span>
           </div>
           <h3 class="text-xl font-semibold mt-6 ">Senior Player</h3>
           <p class="mt-5 w-80 text-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div>
-          <div class="radial-progress text-xl text-blue-400 font-extrabold" style="--value:80;" role="progressbar"><span
-              style="color: black;">80%</span></div>
+          <div class="radial-progress text-xl text-blue-400 font-extrabold ml-6" style="--value:80;" role="progressbar">
+            <span style="color: black;">80%</span>
+          </div>
           <h3 class="text-xl font-semibold mt-6 ">Training Ground</h3>
           <p class="mt-5 w-80 text-lg font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
       </div>
     </section>
+    <hr class="my-14 mx-52 border-dashed border-[rgba(19, 19, 24, 0.2)] ">
+    <!-- accordian section -->
+    <section>
+      <div class="text-center my-20">
+        <h2 class="text-4xl font-extrabold">Clients Question</h2>
+        <p class="text-lg font-medium mt-6 ">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat
+          <br>
+          dolor. Purus urna in sit
+          nullam proin.
+        </p>
+      </div>
+      <hr class="my-16 mx-52 border-dashed border-[rgba(19, 19, 24, 0.2)] ">
+      <div>
+        <div
+          class="hero border sm:mr-16 lg:border-2 box-border ml-0 lg:ml-56 w-9/12 items-center rounded-2xl border-[rgba(19, 19, 24, 0.1)] p-0 lg:p-6 mb-16 border   ">
+          <div class="hero-content flex-col lg:flex-row ">
+            <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl sm:w-96" />
+            <div class="grid">
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  Our Equipment
+                </div>
+                <div class="collapse-content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, optio quibusdam sit provident
+                    asperiores corrupti
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Hockey Training
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Private Lessons
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Ski Touring
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Booking
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">
+                  Pricings
+                </div>
+                <div class="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
   </main>
-  <footer>
 
+  <!-- Footer section -->
+
+  <footer>
+    <footer class="footer p-36  bg-black">
+      <aside>
+        <h2 class="text-3xl font-blacks text-white mb-4">Get In Touch</h2>
+        <p class="text-white text-base font-medium mb-5">Dit amet consectetur. Condimentum
+          <br>
+          adipiscing aliquam turpis placerat dolor. Purus <br> urna in
+          sit nullam proin.
+        <p>
+        <p><i class="fa-regular fa-envelope text-white text-xl mr:0 lg:mr-4"> </i> <span
+            style="color: white; font-size: 19px;">hockeys@support.com</span></p>
+        <p><i class="fa-solid fa-phone text-white text-xl mr:1 lg:mr-4"> </i><span
+            style="color: white; font-size: 20px;">(+62)
+            123-321-543</span></p>
+      </aside>
+      <nav class="text-white leading-8">
+        <header class="footer-title mb-6 text-xl font-bold text-[rgba(255, 255, 255, 1)]">Company</header>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Leadership</a>
+        <a class="link link-hover">Careers</a>
+        <a class="link link-hover">News & Article</a>
+        <a class="link link-hover">Legal Notice</a>
+      </nav>
+      <nav class="text-white leading-8">
+        <header class="footer-title mb-6 text-xl font-bold text-[rgba(255, 255, 255, 1)]">Support</header>
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Ticket Support</a>
+        <a class="link link-hover">Contact us</a>
+      </nav>
+      <nav class="text-white leading-8">
+        <header class="footer-title mb-6 text-xl font-bold text-[rgba(255, 255, 255, 1)]">Services</header>
+        <a class="link link-hover">Academy</a>
+        <a class="link link-hover">Group Lesson</a>
+        <a class="link link-hover">Private Lesson</a>
+        <a class="link link-hover">Hockeys for kids</a>
+        <a class="link link-hover">Hockeys for Adult</a>
+      </nav>
+    </footer>
   </footer>
 </body>
 
